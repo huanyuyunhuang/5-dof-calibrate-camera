@@ -1,0 +1,1906 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1035</width>
+    <height>664</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>311</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="ImageView">
+     <item>
+      <widget class="QLabel" name="IMAGE">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="openPort_Button">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>80</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>打开串口</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>20</y>
+      <width>87</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_2">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>50</y>
+      <width>87</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>9600</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>38400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>115200</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>20</y>
+      <width>41</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>串口</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>50</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>波特率</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>110</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>模式选择</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>110</y>
+      <width>151</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>滑条独立控制模式</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_2">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>130</y>
+      <width>161</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>笛卡尔空间规划模式</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_3">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>150</y>
+      <width>151</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>关节空间规划模式</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>20</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>视觉显示区</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSlider">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>90</y>
+      <width>61</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>500</number>
+    </property>
+    <property name="maximum">
+     <number>2500</number>
+    </property>
+    <property name="value">
+     <number>1500</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSlider_2">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>90</y>
+      <width>61</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>500</number>
+    </property>
+    <property name="maximum">
+     <number>2500</number>
+    </property>
+    <property name="value">
+     <number>1500</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSlider_3">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>180</y>
+      <width>61</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>500</number>
+    </property>
+    <property name="maximum">
+     <number>2500</number>
+    </property>
+    <property name="value">
+     <number>1500</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSlider_4">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>180</y>
+      <width>61</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>500</number>
+    </property>
+    <property name="maximum">
+     <number>2500</number>
+    </property>
+    <property name="value">
+     <number>1500</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSlider_5">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>270</y>
+      <width>61</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>500</number>
+    </property>
+    <property name="maximum">
+     <number>2500</number>
+    </property>
+    <property name="value">
+     <number>1500</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSlider_6">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>270</y>
+      <width>61</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>500</number>
+    </property>
+    <property name="maximum">
+     <number>2500</number>
+    </property>
+    <property name="value">
+     <number>1500</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>70</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>500</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>160</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>500</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>70</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>2500</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>160</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>500</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>250</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>500</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>250</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>500</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>70</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>500</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>160</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>2500</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>160</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>2500</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>70</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>2500</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>250</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>2500</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>250</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>2500</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>60</y>
+      <width>31</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PWM</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_19">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>140</y>
+      <width>31</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PWM</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_20">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>140</y>
+      <width>31</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PWM</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_21">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>240</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PWM</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_22">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>240</y>
+      <width>31</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PWM</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_23">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>60</y>
+      <width>31</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PWM</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_24">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>140</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TIME</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_25">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>240</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TIME</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_26">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>240</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TIME</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_27">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>140</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TIME</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_28">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>60</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TIME</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_29">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>60</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TIME</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>110</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>500</number>
+    </property>
+    <property name="maximum">
+     <number>2500</number>
+    </property>
+    <property name="singleStep">
+     <number>10</number>
+    </property>
+    <property name="value">
+     <number>1500</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_2">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>110</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>500</number>
+    </property>
+    <property name="maximum">
+     <number>2500</number>
+    </property>
+    <property name="singleStep">
+     <number>10</number>
+    </property>
+    <property name="value">
+     <number>1500</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_3">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>200</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>500</number>
+    </property>
+    <property name="maximum">
+     <number>2500</number>
+    </property>
+    <property name="singleStep">
+     <number>10</number>
+    </property>
+    <property name="value">
+     <number>1500</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_4">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>200</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>500</number>
+    </property>
+    <property name="maximum">
+     <number>2500</number>
+    </property>
+    <property name="singleStep">
+     <number>10</number>
+    </property>
+    <property name="value">
+     <number>1500</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_5">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>290</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>500</number>
+    </property>
+    <property name="maximum">
+     <number>2500</number>
+    </property>
+    <property name="singleStep">
+     <number>10</number>
+    </property>
+    <property name="value">
+     <number>1500</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_6">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>290</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>500</number>
+    </property>
+    <property name="maximum">
+     <number>2500</number>
+    </property>
+    <property name="singleStep">
+     <number>10</number>
+    </property>
+    <property name="value">
+     <number>1500</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_7">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>110</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>100</number>
+    </property>
+    <property name="maximum">
+     <number>2000</number>
+    </property>
+    <property name="singleStep">
+     <number>10</number>
+    </property>
+    <property name="value">
+     <number>1000</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_8">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>110</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>100</number>
+    </property>
+    <property name="maximum">
+     <number>2000</number>
+    </property>
+    <property name="singleStep">
+     <number>10</number>
+    </property>
+    <property name="value">
+     <number>1000</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_9">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>200</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>100</number>
+    </property>
+    <property name="maximum">
+     <number>2000</number>
+    </property>
+    <property name="singleStep">
+     <number>10</number>
+    </property>
+    <property name="value">
+     <number>1000</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_10">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>200</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>100</number>
+    </property>
+    <property name="maximum">
+     <number>2000</number>
+    </property>
+    <property name="singleStep">
+     <number>10</number>
+    </property>
+    <property name="value">
+     <number>1000</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_11">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>290</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>100</number>
+    </property>
+    <property name="maximum">
+     <number>2000</number>
+    </property>
+    <property name="singleStep">
+     <number>10</number>
+    </property>
+    <property name="value">
+     <number>1000</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_12">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>290</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>100</number>
+    </property>
+    <property name="maximum">
+     <number>2000</number>
+    </property>
+    <property name="singleStep">
+     <number>10</number>
+    </property>
+    <property name="value">
+     <number>1000</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_30">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>50</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>θ0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_31">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>230</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>θ5</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_32">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>230</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>θ4</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_33">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>130</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>θ3</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_34">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>130</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>θ2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_35">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>50</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>θ1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_36">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>10</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>滑条独立控制模式</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_37">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>185</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>轨迹规划模式</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_38">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>290</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>设置规划点个数：</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pointNUM_Button">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>280</y>
+      <width>71</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>确认</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_39">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>330</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>请输入第</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_40">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>330</y>
+      <width>41</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>个点：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_41">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>370</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>X</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_42">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>410</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Y</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_43">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>450</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Z</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_44">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>490</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>θ4</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_45">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>530</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>θ5</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="build_Button">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>480</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>确认规划</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="unbuild_Button">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>520</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>取消规划</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="point_check_Button">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>360</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>确认此点</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="point_delete_Button">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>400</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>取消上点</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exit_Button">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>560</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>退出</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>280</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>320</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_3">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>360</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_4">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>400</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_5">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>440</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_6">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>480</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_7">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>520</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>470</y>
+      <width>331</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;输出框&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_8">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>370</y>
+      <width>331</width>
+      <height>61</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_4">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>260</y>
+      <width>121</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>eye-to-hand</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_5">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>260</y>
+      <width>111</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>eye-in-hand</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_46">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>350</y>
+      <width>61</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>传输提示</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_47">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>440</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>输出框</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Help_Button">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>560</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>帮助</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>970</x>
+      <y>80</y>
+      <width>51</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>复位</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>370</y>
+      <width>201</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="Start_Button">
+       <property name="text">
+        <string>开始</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Capture_button">
+       <property name="text">
+        <string>跟踪复位</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="End_button">
+       <property name="text">
+        <string>取消跟踪</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_49">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>240</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>笛卡尔空间模式</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_50">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>260</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>可设置响应时间</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_13">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>250</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>20</number>
+    </property>
+    <property name="maximum">
+     <number>2000</number>
+    </property>
+    <property name="singleStep">
+     <number>10</number>
+    </property>
+    <property name="value">
+     <number>100</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_48">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>250</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ms</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_14">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>210</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>0</number>
+    </property>
+    <property name="maximum">
+     <number>200</number>
+    </property>
+    <property name="singleStep">
+     <number>5</number>
+    </property>
+    <property name="value">
+     <number>50</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_51">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>210</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>笛卡尔精度设置</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>0</y>
+      <width>51</width>
+      <height>621</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>330</y>
+      <width>391</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_3">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>0</y>
+      <width>20</width>
+      <height>621</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_4">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>550</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_5">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>170</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_6">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>35</y>
+      <width>331</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_7">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>242</y>
+      <width>331</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_8">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>41</y>
+      <width>16</width>
+      <height>210</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_9">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>40</y>
+      <width>20</width>
+      <height>210</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_10">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>355</y>
+      <width>221</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_11">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>493</y>
+      <width>221</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_12">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>360</y>
+      <width>21</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_13">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>360</y>
+      <width>20</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_6">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>300</y>
+      <width>91</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>目标跟踪</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>300</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>姿态选择：</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_15">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>295</y>
+      <width>46</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>5</number>
+    </property>
+   </widget>
+   <zorder>horizontalLayoutWidget</zorder>
+   <zorder>openPort_Button</zorder>
+   <zorder>comboBox</zorder>
+   <zorder>comboBox_2</zorder>
+   <zorder>label</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_3</zorder>
+   <zorder>checkBox</zorder>
+   <zorder>checkBox_2</zorder>
+   <zorder>checkBox_3</zorder>
+   <zorder>label_4</zorder>
+   <zorder>horizontalSlider</zorder>
+   <zorder>horizontalSlider_2</zorder>
+   <zorder>horizontalSlider_3</zorder>
+   <zorder>horizontalSlider_4</zorder>
+   <zorder>horizontalSlider_5</zorder>
+   <zorder>horizontalSlider_6</zorder>
+   <zorder>label_6</zorder>
+   <zorder>label_8</zorder>
+   <zorder>label_11</zorder>
+   <zorder>label_9</zorder>
+   <zorder>label_10</zorder>
+   <zorder>label_12</zorder>
+   <zorder>label_13</zorder>
+   <zorder>label_14</zorder>
+   <zorder>label_15</zorder>
+   <zorder>label_16</zorder>
+   <zorder>label_17</zorder>
+   <zorder>label_18</zorder>
+   <zorder>label_7</zorder>
+   <zorder>label_19</zorder>
+   <zorder>label_20</zorder>
+   <zorder>label_21</zorder>
+   <zorder>label_22</zorder>
+   <zorder>label_23</zorder>
+   <zorder>label_24</zorder>
+   <zorder>label_25</zorder>
+   <zorder>label_26</zorder>
+   <zorder>label_27</zorder>
+   <zorder>label_28</zorder>
+   <zorder>label_29</zorder>
+   <zorder>spinBox</zorder>
+   <zorder>spinBox_2</zorder>
+   <zorder>spinBox_3</zorder>
+   <zorder>spinBox_4</zorder>
+   <zorder>spinBox_5</zorder>
+   <zorder>spinBox_6</zorder>
+   <zorder>spinBox_7</zorder>
+   <zorder>spinBox_8</zorder>
+   <zorder>spinBox_9</zorder>
+   <zorder>spinBox_10</zorder>
+   <zorder>spinBox_11</zorder>
+   <zorder>spinBox_12</zorder>
+   <zorder>label_30</zorder>
+   <zorder>label_31</zorder>
+   <zorder>label_32</zorder>
+   <zorder>label_33</zorder>
+   <zorder>label_34</zorder>
+   <zorder>label_35</zorder>
+   <zorder>label_36</zorder>
+   <zorder>label_37</zorder>
+   <zorder>label_38</zorder>
+   <zorder>pointNUM_Button</zorder>
+   <zorder>label_39</zorder>
+   <zorder>label_40</zorder>
+   <zorder>label_41</zorder>
+   <zorder>label_42</zorder>
+   <zorder>label_43</zorder>
+   <zorder>label_44</zorder>
+   <zorder>label_45</zorder>
+   <zorder>build_Button</zorder>
+   <zorder>unbuild_Button</zorder>
+   <zorder>point_check_Button</zorder>
+   <zorder>point_delete_Button</zorder>
+   <zorder>exit_Button</zorder>
+   <zorder>textEdit</zorder>
+   <zorder>textEdit_2</zorder>
+   <zorder>textEdit_3</zorder>
+   <zorder>textEdit_4</zorder>
+   <zorder>textEdit_5</zorder>
+   <zorder>textEdit_6</zorder>
+   <zorder>textEdit_7</zorder>
+   <zorder>plainTextEdit</zorder>
+   <zorder>checkBox_4</zorder>
+   <zorder>checkBox_5</zorder>
+   <zorder>textEdit_8</zorder>
+   <zorder>label_46</zorder>
+   <zorder>label_47</zorder>
+   <zorder>Help_Button</zorder>
+   <zorder>pushButton</zorder>
+   <zorder>verticalLayoutWidget</zorder>
+   <zorder>label_49</zorder>
+   <zorder>label_50</zorder>
+   <zorder>spinBox_13</zorder>
+   <zorder>label_48</zorder>
+   <zorder>spinBox_14</zorder>
+   <zorder>label_51</zorder>
+   <zorder>line</zorder>
+   <zorder>line_2</zorder>
+   <zorder>line_3</zorder>
+   <zorder>line_4</zorder>
+   <zorder>line_5</zorder>
+   <zorder>line_6</zorder>
+   <zorder>line_7</zorder>
+   <zorder>line_8</zorder>
+   <zorder>line_9</zorder>
+   <zorder>line_10</zorder>
+   <zorder>line_11</zorder>
+   <zorder>line_12</zorder>
+   <zorder>line_13</zorder>
+   <zorder>checkBox_6</zorder>
+   <zorder>label_5</zorder>
+   <zorder>spinBox_15</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1035</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>机械臂上位机</string>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
